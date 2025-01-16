@@ -1,38 +1,75 @@
 .App {
+  box-sizing: border-box;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #C3CEDA;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: dimgray;
+  font-family: Arial, sans-serif; 
+  padding: 20px; 
 }
 
-.App-link {
-  color: #61dafb;
+.CalcContainer {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CalcDisplay {
+  border: 1px solid #505050;
+  height: 200px;
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+  background: #505050;
+  color: #F5F5E9;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  overflow-y: auto; 
+  max-height: 200px; 
+}
+
+.ButtonContainer {
+  display: grid;
+  gap: 10px; 
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px; 
+}
+
+.ButtonContainer > button {
+  font-size: 1.5em; 
+  color: #F2F1F0;
+  background-color: #FF9500;
+  border: 1px solid #1C1C1C;
+  border-radius: 4px;
+  padding: 10px; 
+  cursor: pointer; 
+}
+
+.NumButton {
+  color: #FFF1F0 !important;
+  background-color: #1C1C1C !important;
+}
+
+.TextButton {
+  color: #FFF1F0 !important;
+  background-color: #1C1C1C !important;
+  font-size: 1.5em; 
+  padding: 10px;
+  width: 100%;
+  margin: 2px 0; 
+}
+
+.ClearButton {
+  color: #FF9500 !important;
+  background-color: #1C1C1C !important;
+}
+
+h1 {
+  font-size: 1.8em;
+  color: #333; 
+  margin-bottom: 20px;
 }
